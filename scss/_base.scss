@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $josefin_font;
+  background: url('../images/bg-desktop-dark.jpg'), $background_color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 400px;
+}

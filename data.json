@@ -1,0 +1,24 @@
+{
+  "tasks": [
+    {
+      "id": 762982,
+      "name": "Complete online Javascript course",
+      "completed": false
+    },
+    {
+      "id": 752982,
+      "name": "Jog around the park 3x",
+      "completed": false
+    },
+    {
+      "id": 7646982,
+      "name": "10 minutes meditation",
+      "completed": false
+    },
+    {
+      "id": 767482,
+      "name": "Pick up groceries",
+      "completed": false
+    }
+  ]
+}

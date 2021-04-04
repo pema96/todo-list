@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main>
+    <section class="content-to-do">
+      <div class="todo">
+        <div class="todo__header">
+          <h2 class="todo__header-title">todo</h2>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26"><path fill="#FFF" fill-rule="evenodd" d="M13 21a1 1 0 011 1v3a1 1 0 11-2 0v-3a1 1 0 011-1zm-5.657-2.343a1 1 0 010 1.414l-2.121 2.121a1 1 0 01-1.414-1.414l2.12-2.121a1 1 0 011.415 0zm12.728 0l2.121 2.121a1 1 0 01-1.414 1.414l-2.121-2.12a1 1 0 011.414-1.415zM13 8a5 5 0 110 10 5 5 0 010-10zm12 4a1 1 0 110 2h-3a1 1 0 110-2h3zM4 12a1 1 0 110 2H1a1 1 0 110-2h3zm18.192-8.192a1 1 0 010 1.414l-2.12 2.121a1 1 0 01-1.415-1.414l2.121-2.121a1 1 0 011.414 0zm-16.97 0l2.121 2.12A1 1 0 015.93 7.344L3.808 5.222a1 1 0 011.414-1.414zM13 0a1 1 0 011 1v3a1 1 0 11-2 0V1a1 1 0 011-1z"/></svg>
+        </div>
+        <form class="todo__form js-form-todo">
+          <input class="todo__form-field" type="text" name="task" placeholder="Create a new todo...">
+        </form>
+        <ul class="todo__list js-todo-list"></ul>
+        <div class="todo__list-footer">
+          <span class="todo__list-items-selected js-count-items-left">5 items left</span>
+          <ul class="todo__list-footer-actions js-actions-footer">
+            <li><button class="todo__list-footer-action" data-action="show-all">All</button></li>
+            <li><button class="todo__list-footer-action" data-action="show-active">Active</button></li>
+            <li><button class="todo__list-footer-action" data-action="show-completed">Completed</button></li>
+          </ul>
+          <button class="todo__list-footer-button-clear js-clear-button">Clear completed</button>
+        </div>
+        <p class="drag-text">Drag and drop to reoder list</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.12/lib/draggable.bundle.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@shopify/draggable@1.0.0-beta.12/lib/plugins/sort-animation.js"></script>
+  <script type="application/json" src="data.json"></script>
+  <script src="js/todoList.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>
